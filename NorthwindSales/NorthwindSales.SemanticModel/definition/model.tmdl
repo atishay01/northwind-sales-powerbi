@@ -1,0 +1,7 @@
+model Model
+	defaultPowerBIDataSourceVersion: powerBI_V3
+
+ref table Sales
+ref table Products
+ref table Customers
+ref table Calendar
