@@ -1,0 +1,31 @@
+table Customers
+
+	column CustomerID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+	column CompanyName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: CompanyName
+
+	column Country
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Country
+
+	column City
+		dataType: string
+		summarizeBy: none
+		sourceColumn: City
+
+	partition Customers = m
+		mode: import
+		source =
+			let
+			    Src = OData.Feed("https://services.odata.org/V4/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+			    Cu = Table.SelectColumns(Src{[Name="Customers", Signature="table"]}[Data], {"CustomerID","CompanyName","Country","City"}),
+			    Typed = Table.TransformColumnTypes(Cu, {{"CustomerID", type text}, {"CompanyName", type text}, {"Country", type text}, {"City", type text}}, "en-US")
+			in
+			    Typed
