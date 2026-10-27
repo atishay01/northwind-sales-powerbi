@@ -1,0 +1,8 @@
+// Northwind sales model measures (exact from the Power BI model)
+Total Revenue = SUMX(Sales, Sales[UnitPrice] * Sales[Quantity] * (1 - Sales[Discount]))
+Orders = DISTINCTCOUNT(Sales[OrderID])
+Units Sold = SUM(Sales[Quantity])
+Avg Order Value = DIVIDE([Total Revenue], [Orders])
+Revenue Prior Year = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Calendar'[Date]))
+Revenue YoY % = DIVIDE([Total Revenue] - [Revenue Prior Year], [Revenue Prior Year])
+Avg Discount % = DIVIDE(SUMX(Sales, Sales[UnitPrice] * Sales[Quantity] * Sales[Discount]), SUMX(Sales, Sales[UnitPrice] * Sales[Quantity]))
