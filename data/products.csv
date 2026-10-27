@@ -1,0 +1,78 @@
+ProductID,ProductName,Category
+1,Chai,Beverages
+2,Chang,Beverages
+3,Aniseed Syrup,Condiments
+4,Chef Anton's Cajun Seasoning,Condiments
+5,Chef Anton's Gumbo Mix,Condiments
+6,Grandma's Boysenberry Spread,Condiments
+7,Uncle Bob's Organic Dried Pears,Produce
+8,Northwoods Cranberry Sauce,Condiments
+9,Mishi Kobe Niku,Meat/Poultry
+10,Ikura,Seafood
+11,Queso Cabrales,Dairy Products
+12,Queso Manchego La Pastora,Dairy Products
+13,Konbu,Seafood
+14,Tofu,Produce
+15,Genen Shouyu,Condiments
+16,Pavlova,Confections
+17,Alice Mutton,Meat/Poultry
+18,Carnarvon Tigers,Seafood
+19,Teatime Chocolate Biscuits,Confections
+20,Sir Rodney's Marmalade,Confections
+21,Sir Rodney's Scones,Confections
+22,Gustaf's Knäckebröd,Grains/Cereals
+23,Tunnbröd,Grains/Cereals
+24,Guaraná Fantástica,Beverages
+25,NuNuCa Nuß-Nougat-Creme,Confections
+26,Gumbär Gummibärchen,Confections
+27,Schoggi Schokolade,Confections
+28,Rössle Sauerkraut,Produce
+29,Thüringer Rostbratwurst,Meat/Poultry
+30,Nord-Ost Matjeshering,Seafood
+31,Gorgonzola Telino,Dairy Products
+32,Mascarpone Fabioli,Dairy Products
+33,Geitost,Dairy Products
+34,Sasquatch Ale,Beverages
+35,Steeleye Stout,Beverages
+36,Inlagd Sill,Seafood
+37,Gravad lax,Seafood
+38,Côte de Blaye,Beverages
+39,Chartreuse verte,Beverages
+40,Boston Crab Meat,Seafood
+41,Jack's New England Clam Chowder,Seafood
+42,Singaporean Hokkien Fried Mee,Grains/Cereals
+43,Ipoh Coffee,Beverages
+44,Gula Malacca,Condiments
+45,Rogede sild,Seafood
+46,Spegesild,Seafood
+47,Zaanse koeken,Confections
+48,Chocolade,Confections
+49,Maxilaku,Confections
+50,Valkoinen suklaa,Confections
+51,Manjimup Dried Apples,Produce
+52,Filo Mix,Grains/Cereals
+53,Perth Pasties,Meat/Poultry
+54,Tourtière,Meat/Poultry
+55,Pâté chinois,Meat/Poultry
+56,Gnocchi di nonna Alice,Grains/Cereals
+57,Ravioli Angelo,Grains/Cereals
+58,Escargots de Bourgogne,Seafood
+59,Raclette Courdavault,Dairy Products
+60,Camembert Pierrot,Dairy Products
+61,Sirop d'érable,Condiments
+62,Tarte au sucre,Confections
+63,Vegie-spread,Condiments
+64,Wimmers gute Semmelknödel,Grains/Cereals
+65,Louisiana Fiery Hot Pepper Sauce,Condiments
+66,Louisiana Hot Spiced Okra,Condiments
+67,Laughing Lumberjack Lager,Beverages
+68,Scottish Longbreads,Confections
+69,Gudbrandsdalsost,Dairy Products
+70,Outback Lager,Beverages
+71,Flotemysost,Dairy Products
+72,Mozzarella di Giovanni,Dairy Products
+73,Röd Kaviar,Seafood
+74,Longlife Tofu,Produce
+75,Rhönbräu Klosterbier,Beverages
+76,Lakkalikööri,Beverages
+77,Original Frankfurter grüne Soße,Condiments
