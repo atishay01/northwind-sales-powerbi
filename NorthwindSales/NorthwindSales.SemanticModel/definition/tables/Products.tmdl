@@ -1,0 +1,31 @@
+table Products
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: ProductID
+
+	column ProductName
+		dataType: string
+		summarizeBy: none
+		sourceColumn: ProductName
+
+	column Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Category
+
+	partition Products = m
+		mode: import
+		source =
+			let
+			    Src = OData.Feed("https://services.odata.org/V4/Northwind/Northwind.svc/", null, [Implementation="2.0"]),
+			    P = Table.SelectColumns(Src{[Name="Products", Signature="table"]}[Data], {"ProductID","ProductName","CategoryID"}),
+			    C = Table.SelectColumns(Src{[Name="Categories", Signature="table"]}[Data], {"CategoryID","CategoryName"}),
+			    Joined = Table.NestedJoin(P, {"CategoryID"}, C, {"CategoryID"}, "C", JoinKind.LeftOuter),
+			    Expanded = Table.ExpandTableColumn(Joined, "C", {"CategoryName"}, {"Category"}),
+			    Ordered = Table.SelectColumns(Expanded, {"ProductID","ProductName","Category"}),
+			    Typed = Table.TransformColumnTypes(Ordered, {{"ProductID", Int64.Type}, {"ProductName", type text}, {"Category", type text}}, "en-US")
+			in
+			    Typed
